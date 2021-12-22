@@ -1,0 +1,345 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body,
+html,
+header {
+    width: 100%;
+    height: 100%;
+}
+
+.navmain {
+    width: 40px;
+    height: 40px;
+    background-color: #303030;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.barre1,
+.barre2,
+.barre3 {
+    width: 70%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+.barre2 {
+    top: 50%;
+}
+
+.barre3 {
+    top: 70%;
+}
+
+.header {
+    background: url(../img/header.jpg) center/cover;
+    position: relative;
+}
+
+.header::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.first-link {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-wrap {
+    width: 960px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-wrap h1 {
+    color: white;
+    font-size: 70px;
+
+}
+
+.header-wrap p {
+    margin-bottom: 40px;
+    color: white;
+    font-size: 18px;
+}
+
+@keyframes fleche {
+    from {
+        margin-top: 40px;
+    }
+    to{
+        margin-top: 100px;
+    }
+}
+.header-wrap img{
+    animation: .5s linear 1s infinite alternate slidein;;
+}
+
+/* BTN */
+.bouton-blanc {
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 3px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 10px 25px;
+    transition: .3s all ease-in-out;
+}
+
+.bouton-blanc:hover {
+    color: black;
+    background: white;
+
+}
+
+.bouton-noir {
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 3px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 2px solid black;
+    padding: 10px 25px;
+    transition: .3s all ease-in-out;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, 150%);
+}
+
+.bouton-noir:hover {
+    color: white;
+    background: black;
+
+}
+
+/*  */
+.header-wrap img {
+    display: block;
+    margin: 40px auto;
+}
+
+.key-wrap {
+    width: 1080px;
+    margin: 25px auto;
+    position: relative;
+}
+
+.key-wrap div {
+    display: inline-block;
+    width: 330px;
+}
+
+.key-wrap img {
+    width: 100%;
+}
+
+.key-center {
+    margin: 0 30px;
+}
+
+.key-facts {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.key-facts h2 {
+    padding: 40px 0;
+    border-bottom: 1px solid black;
+    width: 1080px;
+    margin: 0 auto;
+    font-size: 50px;
+}
+
+.key-wrap p {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.tips-tricks {
+    height: 100vh;
+    color: white;
+    position: relative;
+    background: url(../img/train.jpg) center/cover;
+
+}
+
+.tips-tricks::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tips {
+    width: 960px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tips h1 {
+    font-size: 70px;
+    position: relative;
+
+}
+
+.tips p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    position: relative;
+}
+
+.bouton-bloc {
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 3px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 10px 25px;
+    transition: .3s all ease-in-out;
+}
+
+.bouton-bloc:hover {
+    color: black;
+    background: white;
+
+}
+
+.country {
+    margin-bottom: 70px;
+}
+
+.country h2 {
+    padding: 40px 0;
+    border-bottom: 1px solid black;
+    width: 1080px;
+    margin: 0 auto;
+    font-size: 50px;
+    text-align: center;
+}
+
+.country p {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    line-height: 30px;
+}
+
+.info{
+width: 960px;
+margin: 0 auto;
+}
+
+.info img {
+    width: 500px;
+    float: left;
+    margin-right: 30px;
+}
+
+.liste{
+    columns: 2;
+    line-height: 20px;
+    font-size: 14px;
+    
+}
+
+.liste ul{
+    margin: 0;
+    padding: 0;
+}
+
+.about {
+    height: 100vh;
+    color: white;
+    position: relative;
+    background: url(../img/barel.jpg) center/cover;
+
+}
+
+.about::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.spirit {
+    width: 960px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spirit h1 {
+    font-size: 70px;
+    position: relative;
+
+}
+
+.spirit p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    position: relative;
+}
+
+.footer{
+    margin: 30px 0;
+    text-align: center;
+}
+.footer a{
+    display: inline-block;
+    padding: 0px 30px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.footer small{
+    line-height: 30px;
+}
